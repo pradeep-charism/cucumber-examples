@@ -5,8 +5,8 @@ Learn to write cucumber tests by looking at the these examples
 - What is Cucumber?
 - Gherkin
 - Glue
-Maven dependencies
-Step definition
+- Maven dependencies
+- Step definition
 
 # Demonstrate basic features
 # Demonstrate datatables, Scenario outlines
