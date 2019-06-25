@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class CalculatorGlue {
+public class CalculatorStepDefinitions {
 
     private Calculator calculator;
     private Object result;
