@@ -2,9 +2,9 @@
 Learn to write cucumber tests by looking at the these examples
 
 # Key points
-What is Cucumber?
-Gherkin
-Glue
+- What is Cucumber?
+- Gherkin
+- Glue
 Maven dependencies
 Step definition
 
