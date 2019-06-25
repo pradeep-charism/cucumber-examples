@@ -13,3 +13,8 @@ Learn to write cucumber tests by looking at the these examples
 # Demonstrate domain code
 # Demonstrate regular expressions
 # Demonstrate how to keep this as living documentation
+- Living documentation between business users and developers. Written in business language, which they use in their day today language.
+- Free text description for Features
+- Examples in the Scenario outline. Multiple examples with their descriptions
+- Meaningful directory names and feature names. Group by features and business functions.
+- Generate reports using
