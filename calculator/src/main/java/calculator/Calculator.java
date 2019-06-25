@@ -9,4 +9,11 @@ public class Calculator {
     public Integer subtract(Integer int1, Integer int2) {
         return int1-int2;
     }
+
+    public Object divide(Integer int1, int int2) {
+        if(int2 == 0){
+            return "Divide by zero exception";
+        }
+        return Double.valueOf(int1)/Double.valueOf(int2);
+    }
 }
