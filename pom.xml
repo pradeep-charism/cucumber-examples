@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>calculator</module>
+        <module>trade-ledger</module>
     </modules>
     <dependencyManagement>
         <dependencies>
