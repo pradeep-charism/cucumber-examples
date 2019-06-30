@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "classpath:features/loyalty_cards",
+        features = "classpath:features/stamps",
         glue = "com.pluralsight.bdd"
 )
 public class SuperSmoothieProgramTestSuite {

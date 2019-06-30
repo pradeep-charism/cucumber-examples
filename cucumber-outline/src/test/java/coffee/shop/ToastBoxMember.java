@@ -1,11 +1,11 @@
-package com.pluralsight.bdd.loyalty_cards;
+package coffee.shop;
 
-public class MorningFreshnessMember {
+public class ToastBoxMember {
     private String name;
-    private SuperSmoothieSchema schema;
+    private StampCard schema;
     private int points;
 
-    public MorningFreshnessMember(String name, SuperSmoothieSchema schema) {
+    public ToastBoxMember(String name, StampCard schema) {
         this.name = name;
         this.schema = schema;
     }

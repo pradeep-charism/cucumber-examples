@@ -1,4 +1,4 @@
-package com.pluralsight.bdd.loyalty_cards;
+package coffee.shop;
 
 import java.util.HashMap;
 import java.util.Map;
