@@ -1,4 +1,4 @@
-package com.pluralsight.bdd.loyalty_cards;
+package shop;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -9,14 +9,14 @@ import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SuperSmoothieStepDefinitions {
+public class ToastBoxStepDefinitions {
 
     private DrinkCatalog drinkCatalog = new DrinkCatalog();
-    private SuperSmoothieSchema superSmoothieSchema = new SuperSmoothieSchema(drinkCatalog);
-    private MorningFreshnessMember michael;
+    private StampCard stampCard = new StampCard(drinkCatalog);
+    private ToastBoxMember member;
 
-    @Given("the following drink categories:")
-    public void the_following_drink_categories(List<Map<String,String>> drinkCategories) {
+    @Given("the following drink categories in the shop:")
+    public void the_following_drink_categories_in_the_shop(List<Map<String,String>> drinkCategories) {
         drinkCategories.stream().forEach(
                 drinkCategory -> {
                     String drink = drinkCategory.get("Drink");
@@ -24,27 +24,27 @@ public class SuperSmoothieStepDefinitions {
                     Integer points = Integer.parseInt(drinkCategory.get("Points"));
 
                     drinkCatalog.addDrink(drink, category);
-                    superSmoothieSchema.setPointsPerCategory(category, points);
+                    stampCard.setPointsPerCategory(category, points);
 
                 }
         );
     }
 
-    @Given("^(.*) is a Morning Freshness Member$")
-    public void michael_is_a_Morning_Freshness_Member(String name) {
-        michael = new MorningFreshnessMember(name, superSmoothieSchema);
+    @Given("^(.*) is a Toast Box Member$")
+    public void user_is_a_Toast_Box_Member(String name) {
+        member = new ToastBoxMember(name, stampCard);
     }
 
     @When("^(.*) purchases (\\d+) (.*) drinks?")
-    public void michael_purchases_drinks(String name,
+    public void user_purchases_drinks(String name,
                                          Integer amount,
                                          String drink) {
-        michael.orders(amount, drink);
+        member.orders(amount, drink);
     }
 
-    @Then("^s?he should earn (.*) points")
+    @Then("he should earn {int} points")
     public void he_should_earn_points(Integer expectedPoints) {
-        assertThat(michael.getPoints()).isEqualTo(expectedPoints);
+        assertThat(member.getPoints()).isEqualTo(expectedPoints);
     }
 
 
@@ -77,5 +77,4 @@ public class SuperSmoothieStepDefinitions {
     public void it_should_be_classed_as_a_flame_smoothie(Integer flames, String range) {
         // TODO
     }
-
 }

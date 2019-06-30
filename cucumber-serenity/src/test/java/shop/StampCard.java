@@ -1,13 +1,13 @@
-package com.pluralsight.bdd.loyalty_cards;
+package shop;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class SuperSmoothieSchema {
+public class StampCard {
     private Map<String, Integer> pointsPerCategory = new HashMap<>();
     private DrinkCatalog catalog;
 
-    public SuperSmoothieSchema(DrinkCatalog catalog) {
+    public StampCard(DrinkCatalog catalog) {
         this.catalog = catalog;
     }
 
