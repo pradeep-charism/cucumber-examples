@@ -53,28 +53,28 @@ public class ToastBoxStepDefinitions {
         // TODO
     }
 
-    @Given("the following smoothies are available:")
-    public void the_following_smoothies_are_available(io.cucumber.datatable.DataTable dataTable) {
+    @Given("the following drinks are available:")
+    public void the_following_drinks_are_available(io.cucumber.datatable.DataTable dataTable) {
         // TODO
     }
 
-    @When("^s?he views the smoothie catalog$")
-    public void she_views_the_smoothie_catalog() {
+    @When("^s?he views the drink catalog$")
+    public void she_views_the_drink_catalog() {
         // TODO
     }
 
-    @Then("^s?he should be shown the following smoothies:")
-    public void she_should_be_shown_the_following_smoothies(io.cucumber.datatable.DataTable dataTable) {
+    @Then("^s?he should be shown the following drinks:")
+    public void she_should_be_shown_the_following_drinks(io.cucumber.datatable.DataTable dataTable) {
         // TODO
     }
 
-    @When("^an? (.*) smoothie contains (.*) calories$")
-    public void a_smoothie_contains(String smoothie, Integer calories) {
+    @When("^an? (.*) drink contains (.*) calories$")
+    public void a_drink_contains(String drink, Integer calories) {
         // TODO
     }
 
-    @Then("it should be classed as a {int} flame smoothie in the {word} range")
-    public void it_should_be_classed_as_a_flame_smoothie(Integer flames, String range) {
+    @Then("it should be classed as a {int} flame drink in the {word} range")
+    public void it_should_be_classed_as_a_flame_drink(Integer flames, String range) {
         // TODO
     }
 }
