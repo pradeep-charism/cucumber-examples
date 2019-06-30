@@ -12,6 +12,7 @@
         <module>calculator</module>
         <module>trade-ledger</module>
         <module>cucumber-outline</module>
+        <module>serenity-example</module>
     </modules>
 
     <dependencyManagement>
