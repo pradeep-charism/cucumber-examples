@@ -30,13 +30,13 @@ public class ToastBoxStepDefinitions {
         );
     }
 
-    @Given("^(.*) is a Morning Freshness Member$")
-    public void michael_is_a_Morning_Freshness_Member(String name) {
+    @Given("^(.*) is a Toast Box Member$")
+    public void user_is_a_Toast_Box_Member(String name) {
         member = new ToastBoxMember(name, stampCard);
     }
 
     @When("^(.*) purchases (\\d+) (.*) drinks?")
-    public void michael_purchases_drinks(String name,
+    public void user_purchases_drinks(String name,
                                          Integer amount,
                                          String drink) {
         member.orders(amount, drink);

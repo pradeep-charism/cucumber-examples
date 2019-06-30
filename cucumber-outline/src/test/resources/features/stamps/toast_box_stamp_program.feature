@@ -11,8 +11,8 @@ Feature: Toast box stamp collection program
       | Chicken Rice  | Rice     | 35     |
 
   Scenario Outline: Earning points when purchasing drinks
-    Given Michael is a Morning Freshness Member
-    When Michael purchases <Quantity> <Drink> drinks
+    Given Pradeep is a Toast Box Member
+    When Pradeep purchases <Quantity> <Drink> drinks
     Then he should earn <Points> points
     Examples:
       | Drink        | Quantity | Points |
