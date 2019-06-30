@@ -1,5 +1,5 @@
 Feature: Toast box stamp collection program
-  The more drinks you buy, the more stamps you earn and redeem free drinks with it.
+  The more drinks you buy, the more stamps you can earn, and can redeem free drinks with it.
 
   Background:
     Given the following drink categories in the shop:
