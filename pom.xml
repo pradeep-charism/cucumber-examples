@@ -11,7 +11,9 @@
     <modules>
         <module>calculator</module>
         <module>trade-ledger</module>
+        <module>practice-code</module>
     </modules>
+
     <dependencyManagement>
         <dependencies>
             <dependency>
