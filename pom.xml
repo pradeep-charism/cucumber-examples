@@ -13,6 +13,7 @@
         <module>trade-ledger</module>
         <module>cucumber-outline</module>
         <module>cucumber-serenity</module>
+        <module>cucumber-demo</module>
     </modules>
 
 </project>
